@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # =============== #
 # Unity generated #
 # =============== #
@@ -24,7 +23,7 @@ ExportedObj/
 # ============ #
 # OS generated #
 # ============ #
-.DS_Store
+*.DS_Store
 .DS_Store?
 ._*
 .Spotlight-V100
@@ -32,6 +31,3 @@ ExportedObj/
 Icon?
 ehthumbs.db
 Thumbs.db
-=======
-DS_Store
->>>>>>> c974512a0359114fe046209af0b26fcfe0e2ac32
