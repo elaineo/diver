@@ -21,11 +21,25 @@ public class BGLooper : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D collider) {
 		Debug.Log ("Triggered: " + collider.name);
 
+		int panelCount = numBGPanels;
+		switch (collider.tag) {
+			case "Sea":
+				panelCount = 3;
+				break;
+			case "Sand":
+			panelCount = 5;
+				break;
+			default:
+				panelCount = numBGPanels;
+				break;
+		}
+
+
 		float widthOfBGObject = ((BoxCollider2D)collider).size.x;
 
 		Vector3 pos = collider.transform.position;
 
-		pos.x += widthOfBGObject * numBGPanels;
+		pos.x += widthOfBGObject * panelCount;
 
 		if(collider.tag == "Pipe") {
 			pos.y = Random.Range(pipeMin, pipeMax);

@@ -72,6 +72,8 @@ public class BirdMovement : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D collision) {
 		if(godMode)
 			return;
+		else if (collision.gameObject.tag == "Sand")
+			return;
 
 		animator.SetTrigger("Death");
 		dead = true;
