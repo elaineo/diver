@@ -13,10 +13,27 @@ public class Coin : MonoBehaviour {
 	
 	}
 
+	IEnumerator FadeAndDestroy() {
+		for (float f = 1f; f >= 0; f -= 0.1f) {
+			Color c = renderer.material.color;
+			c.a = f;
+			renderer.material.color = c;
+
+			Vector3 pos = transform.position;
+			pos.y += 0.05f;
+			transform.position = pos;
+
+			yield return null;
+		}
+		
+		Destroy (this.gameObject);
+	}
+
 	void OnTriggerEnter2D(Collider2D collider) {
 		if (collider.tag == "Player") {
 			Score.AddPoint();
-			Destroy (this.gameObject);
+			//Destroy (this.gameObject);
+			StartCoroutine("FadeAndDestroy");
 		}
 	}
 }
