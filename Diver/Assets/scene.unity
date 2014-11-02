@@ -2682,6 +2682,18 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 6ff21ce45b9b16942ab65002bca67f84, type: 2}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 6ff21ce45b9b16942ab65002bca67f84, type: 2}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 6ff21ce45b9b16942ab65002bca67f84, type: 2}
+      propertyPath: InitialModule.maxNumParticles
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6ff21ce45b9b16942ab65002bca67f84, type: 2}
   m_RootGameObject: {fileID: 196605980}
@@ -3806,7 +3818,7 @@ ParticleSystem:
       minMaxState: 3
     gravityModifier: .100000001
     inheritVelocity: 0
-    maxNumParticles: 1000
+    maxNumParticles: 100
   ShapeModule:
     serializedVersion: 2
     enabled: 0
