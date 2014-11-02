@@ -50,6 +50,6 @@ public class Score : MonoBehaviour {
 		GameObject player_go = GameObject.FindGameObjectWithTag("Player");
 		score = (int)player_go.rigidbody2D.position.x * coins;
 		AddPoint ();
-		guiText.text = "Score: " + score.ToString("F0") + "\nHigh Score: " + highScore.ToString("F0");
+		guiText.text = "Coins: "+ coins.ToString("F0") + "\nScore: " + score.ToString("F0") + "\nHigh Score: " + highScore.ToString("F0");
 	}
 }
