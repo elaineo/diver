@@ -32,13 +32,14 @@ public class Spawner : MonoBehaviour
 
 	}
 
-	void Update () {
+	void FixedUpdate() {
 		if(player != null) {
 			Vector3 pos = transform.position;
 			pos.x = player.position.x + offsetX;
 			transform.position = pos;
 		}
 	}
+
 	public virtual void Spawn ()
 	{
 		// Instantiate a random enemy.

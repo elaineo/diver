@@ -7,9 +7,8 @@ public class Coin : MonoBehaviour {
 	void Start () {
 	
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+	void FixedUpdate () {
 		Vector3 pos = transform.position;
 		Vector3 camxy = Camera.main.WorldToScreenPoint(pos);		
 		if (camxy.x < 0)
