@@ -463,7 +463,7 @@ GameObject:
   - 58: {fileID: 280413900}
   - 58: {fileID: 280413901}
   m_Layer: 0
-  m_Name: PlayerBird
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1130,7 +1130,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &975241607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1146,6 +1146,8 @@ MonoBehaviour:
   spawnDelay: 0
   enemies:
   - {fileID: 100000, guid: f73b45a53620f4ec3952b628ead079f5, type: 2}
+  coin: {fileID: 0}
+  powerUp: {fileID: 0}
 --- !u!4 &975241608
 Transform:
   m_ObjectHideFlags: 0
@@ -1547,7 +1549,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f131300b193d4426c9d6f2ae3a9656f7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b8d9abf3f256a41b5805bea8e21cc035, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1694114728
 GameObject:
@@ -1873,7 +1875,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
-  m_GravityScale: .600000024
+  m_GravityScale: 0
   m_FixedAngle: 0
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1887,9 +1889,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2076560440}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a435a3c68e17d4335b853a6e8dc5c1a1, type: 3}
+  m_Script: {fileID: 11500000, guid: 607082282445b499c8b8b754a4de99cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxNumberOfDirectionChanges: 3
 --- !u!1 &2081929377
 GameObject:
   m_ObjectHideFlags: 0

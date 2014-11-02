@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Player : MonoBehaviour {
 
-	Vector3 velocity = Vector3.zero;
+	//Vector3 velocity = Vector3.zero;
 	public float flapSpeed    = 50f;
 	public float forwardSpeed = 1f;
 
@@ -82,6 +82,4 @@ public class Player : MonoBehaviour {
 		dead = true;
 		deathCooldown = 0.5f;
 	}
-
-	void OnTrigger
 }
