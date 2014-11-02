@@ -57,14 +57,17 @@ public class BGLooper : MonoBehaviour {
 		if ("Shine" == collider.tag) {
 			shineCounter++;
 			if (shineCounter%2 == 0) {
-				int r = Random.Range(0, 2);
-				string[] levels = {"LevelA", "Level_B"};
+				int r = Random.Range(0, 3);
+				string[] levels = {"LevelA", "Level_B", "Level_C"};
 				Debug.Log (r);
 				switch (r) {
 					case 0: 
 					pos.y = 1.25f;
 					break;
 					case 1:
+					pos.y = 1.0f;
+					break;
+					case 2:
 					pos.y = 1.0f;
 					break;
 				}
