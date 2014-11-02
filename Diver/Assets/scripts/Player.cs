@@ -73,8 +73,10 @@ public class Player : MonoBehaviour {
 				r.material.color = c;
 			}
 			if (powerUpTimeout > 0.0f) {
-				Debug.Log(powerUpTimeout);
 				powerUpTimeout -= Time.deltaTime;
+			} else if (poweredUp) {
+				poweredUp = false;
+				transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);							
 			}
 		}
 	}
@@ -139,9 +141,8 @@ public class Player : MonoBehaviour {
 			Color c = r.color;
 			c.a = 0.3f;
 			r.material.color = c;
-			//invincibilityTimeout = 2.0f;
+			invincibilityTimeout = 2.0f;
 			invicible = true;
-			powerUpTimeout = 5.0f;
 		}
 
 		if (invicible)
@@ -162,6 +163,7 @@ public class Player : MonoBehaviour {
 		if (poweredUp)
 			return;
 		poweredUp = true;
+		powerUpTimeout = 5.0f;		
 		transform.localScale -= new Vector3 (0.5f, 0.5f, 0.5f);
 		AudioSource.PlayClipAtPoint(powerClip, transform.position);
 		//invicible = true;
