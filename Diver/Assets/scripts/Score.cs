@@ -13,7 +13,7 @@ public class Score : MonoBehaviour {
 		if(instance.player.dead)
 			return;
 
-		score++;
+//		score++;
 
 		if(score > highScore) {
 			highScore = score;
@@ -36,18 +36,20 @@ public class Score : MonoBehaviour {
 		player = player_go.GetComponent<Player>();
 		score = 0;
 		highScore = PlayerPrefs.GetInt("highScore", 0);
-		coins = PlayerPrefs.GetInt ("coins", 0);
+		coins = 0;
+		//coins = PlayerPrefs.GetInt ("coins", 0);
 	}
 
 	void OnDestroy() {
 		instance = null;
 		PlayerPrefs.SetInt("highScore", highScore);
-		PlayerPrefs.SetInt ("coins", coins);
+		// PlayerPrefs.SetInt("coins", coins);
 	}
 
 	void Update () {
 		GameObject player_go = GameObject.FindGameObjectWithTag("Player");
-		float x = player_go.rigidbody2D.position.x;
-		guiText.text = "Coins: " + coins.ToString() + "\nScore: " + x.ToString("F2") + "\nHigh Score: " + highScore;
+		score = (int)player_go.rigidbody2D.position.x * coins;
+		AddPoint ();
+		guiText.text = "Score: " + score.ToString("F0") + "\nHigh Score: " + highScore.ToString("F0");
 	}
 }
