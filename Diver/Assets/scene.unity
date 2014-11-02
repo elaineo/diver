@@ -192,7 +192,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 501bc6f2a9cfb4ab185186cd1e5fa7a1, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 501bc6f2a9cfb4ab185186cd1e5fa7a1, type: 2}
       propertyPath: m_TagString
@@ -1517,7 +1517,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0ac5e9005d0234fdfba7e1a9c964833f, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0ac5e9005d0234fdfba7e1a9c964833f, type: 2}
@@ -1803,6 +1803,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flapSpeed: 175
   forwardSpeed: 1.20000005
+  powerUp: {fileID: 0}
   dead: 0
   godMode: 1
 --- !u!1 &546746776
@@ -2149,7 +2150,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: 823843dba7c81c541afb56ffd5963076, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 823843dba7c81c541afb56ffd5963076, type: 2}
@@ -3455,7 +3456,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d57c36da0e39748f89e103115253d3f2, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: d57c36da0e39748f89e103115253d3f2, type: 2}
       propertyPath: m_Sprite
