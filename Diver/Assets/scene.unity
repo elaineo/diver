@@ -575,16 +575,11 @@ ParticleSystem:
   InitialModule:
     enabled: 1
     startLifetime:
-      scalar: 3
+      scalar: 2.5
       maxCurve:
         serializedVersion: 2
         m_Curve:
         - time: 0
-          value: 1
-          inSlope: 0
-          outSlope: 0
-          tangentMode: 0
-        - time: 1
           value: 1
           inSlope: 0
           outSlope: 0
@@ -595,18 +590,13 @@ ParticleSystem:
         serializedVersion: 2
         m_Curve:
         - time: 0
-          value: 0
-          inSlope: 0
-          outSlope: 0
-          tangentMode: 0
-        - time: 1
-          value: 0
+          value: .800000012
           inSlope: 0
           outSlope: 0
           tangentMode: 0
         m_PreInfinity: 2
         m_PostInfinity: 2
-      minMaxState: 0
+      minMaxState: 3
     startSpeed:
       scalar: .0299999993
       maxCurve:
@@ -810,7 +800,7 @@ ParticleSystem:
     enabled: 1
     m_Type: 0
     rate:
-      scalar: 30
+      scalar: 20
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -1607,8 +1597,8 @@ Transform:
   m_PrefabInternal: {fileID: 1094268954}
   m_GameObject: {fileID: 261372165}
   m_LocalRotation: {x: -.707106829, y: 0, z: 0, w: .707106829}
-  m_LocalPosition: {x: 1.02430058, y: -.859301925, z: 1.4088846e-07}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 1.39367592, y: -.461512864, z: 9.34683158e-08}
+  m_LocalScale: {x: 2.5, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -3015,17 +3005,25 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 19800000, guid: 0ac5e9005d0234fdfba7e1a9c964833f, type: 2}
+      propertyPath: InitialModule.startLifetime.maxCurve.m_Curve.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 0ac5e9005d0234fdfba7e1a9c964833f, type: 2}
+      propertyPath: InitialModule.startLifetime.minCurve.m_Curve.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0ac5e9005d0234fdfba7e1a9c964833f, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1.02430058
+      value: 1.39367592
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0ac5e9005d0234fdfba7e1a9c964833f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -.859301925
+      value: -.461512864
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0ac5e9005d0234fdfba7e1a9c964833f, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 1.4088846e-07
+      value: 9.34683158e-08
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0ac5e9005d0234fdfba7e1a9c964833f, type: 2}
       propertyPath: m_LocalRotation.x
@@ -3046,6 +3044,34 @@ Prefab:
     - target: {fileID: 400000, guid: 0ac5e9005d0234fdfba7e1a9c964833f, type: 2}
       propertyPath: m_RootOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 0ac5e9005d0234fdfba7e1a9c964833f, type: 2}
+      propertyPath: EmissionModule.rate.scalar
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0ac5e9005d0234fdfba7e1a9c964833f, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 0ac5e9005d0234fdfba7e1a9c964833f, type: 2}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 0ac5e9005d0234fdfba7e1a9c964833f, type: 2}
+      propertyPath: InitialModule.startLifetime.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 0ac5e9005d0234fdfba7e1a9c964833f, type: 2}
+      propertyPath: InitialModule.startLifetime.maxCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 0ac5e9005d0234fdfba7e1a9c964833f, type: 2}
+      propertyPath: InitialModule.startLifetime.minCurve.m_Curve.Array.data[0].value
+      value: .800000012
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: 0ac5e9005d0234fdfba7e1a9c964833f, type: 2}
+      propertyPath: SizeBySpeedModule.enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0ac5e9005d0234fdfba7e1a9c964833f, type: 2}
