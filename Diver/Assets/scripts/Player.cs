@@ -20,6 +20,8 @@ public class Player : MonoBehaviour {
 	private float buoyancyCoefficient= 2.2f;	
 	private float startGravity= 0.6f;
 
+	bool poweredUp = false;
+
 	// Use this for initialization
 	void Start () {
 		animator = transform.GetComponentInChildren<Animator>();
@@ -81,5 +83,12 @@ public class Player : MonoBehaviour {
 		animator.SetTrigger("Death");
 		dead = true;
 		deathCooldown = 0.5f;
+	}
+
+	public void PowerUp() {
+		if (poweredUp)
+			return;
+		poweredUp = true;
+		transform.localScale += new Vector3 (1.0f, 1.0f, 0.0f);
 	}
 }

@@ -2,9 +2,8 @@
 using System.Collections;
 
 public class Powerup : MonoBehaviour {
-	public float lifespan;
+	public float lifespan = 2;
 	bool fading;
-	GameObject player;
 
 	// Use this for initialization
 	public void Start () {
@@ -28,10 +27,6 @@ public class Powerup : MonoBehaviour {
 			c.a = f;
 			renderer.material.color = c;
 			transform.localScale += new Vector3(0.1f, 0.1f, 0);
-
-			if (player)
-				player.transform.localScale += new Vector3(0.1f, 0.1f, 0);
-
 			yield return null;
 		}
 		
@@ -40,7 +35,8 @@ public class Powerup : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D collider) {
 		if (collider.tag == "Player") {	
-			player = collider.gameObject;
+			Player player = collider.gameObject.GetComponent<Player>();
+			player.PowerUp();
 			StartCoroutine("FadeAndDestroy");
 		}
 	}

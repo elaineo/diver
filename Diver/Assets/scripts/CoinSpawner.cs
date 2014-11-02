@@ -3,19 +3,20 @@ using System.Collections;
 
 public class CoinSpawner : Spawner {
 	public GameObject coin;
-	public GameObject powerUp;
+	GameObject powerUp;
 
 	public override void Spawn() {
 		// Instantiate a random enemy.
-		int index = Random.Range (0, 2);
-		switch (index) {
-		case 0:
-			AddCoins();
-			break;
-		case 1:
-			AddPowerUp();
-			break;
-		}
+		AddCoins ();
+//		int index = Random.Range (0, 2);
+//		switch (index) {
+//		case 0:
+//			AddCoins();
+//			break;
+//		case 1:
+//			AddPowerUp();
+//			break;
+//		}
 	}
 	
 	void AddCoins() {
