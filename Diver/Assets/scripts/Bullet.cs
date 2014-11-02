@@ -12,8 +12,8 @@ public class Bullet : MonoBehaviour
 		if (collision.gameObject.tag == "Enemy" || collision.gameObject.tag== "Bullet") {
 			// also check if block
 			Debug.Log ("Bullet shot : " + collision.gameObject.tag);
-			rigidbody2D.simulated = false;
-			Destroy(this.gameObject);
+//			rigidbody2D.simulated = false;
+//			Destroy(this.gameObject);
 		}
 
 	}
