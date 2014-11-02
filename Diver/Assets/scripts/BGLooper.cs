@@ -30,10 +30,10 @@ public class BGLooper : MonoBehaviour {
 		int panelCount = numBGPanels;
 		switch (collider.tag) {
 			case "Sea":
-				panelCount = 3;
+				panelCount = 1;
 				break;
 			case "Sand":
-			panelCount = 6;
+			panelCount = 1;
 				break;
 			default:
 				panelCount = numBGPanels;
