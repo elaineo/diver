@@ -7,6 +7,7 @@ public class BGLooper : MonoBehaviour {
 	public Transform coin;
 
 	int numBGPanels = 6;
+	int shineCounter = 0;
 
 	float pipeMax = 0.8430938f;
 	float pipeMin = 0.13243029f;
@@ -54,15 +55,18 @@ public class BGLooper : MonoBehaviour {
 		pos.x += widthOfBGObject * panelCount;
 
 		if ("Shine" == collider.tag) {
-			int r = Random.Range(0, 1);
-			string[] levels = {"LevelA", "Level_B"};
-			Debug.Log (r);
-			pos.y = 1.25f;
-			// Put block
-			GameObject obj = Resources.Load (levels[r], typeof(GameObject)) as GameObject;
-			Instantiate (obj, pos, transform.rotation);
-			obj = Resources.Load ("coin", typeof(GameObject)) as GameObject;
-			Instantiate (obj, pos, transform.rotation);
+			shineCounter++;
+			if (shineCounter%2 == 0) {
+				int r = Random.Range(0, 1);
+				string[] levels = {"LevelA", "Level_B"};
+				Debug.Log (r);
+				pos.y = 1.25f;
+				// Put block
+				GameObject obj = Resources.Load (levels[r], typeof(GameObject)) as GameObject;
+				Instantiate (obj, pos, transform.rotation);
+				obj = Resources.Load ("coin", typeof(GameObject)) as GameObject;
+				Instantiate (obj, pos, transform.rotation);
+			}
 		}
 		// Move bg, but kill everything else
 		if (hs.Contains (collider.tag)) {
