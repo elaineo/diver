@@ -16,6 +16,7 @@ public class Player : MonoBehaviour {
 	float deathCooldown;
 
 	public bool godMode = true;
+	public bool skyOxygenRefill = false;
 
 	private float dragCoefficient= 0.5f;
 	private float buoyancyCoefficient= 0.2f;	
@@ -26,6 +27,7 @@ public class Player : MonoBehaviour {
 	bool invicible = false;
 
 	private ParticleSystem bubbles;
+	public static Player currentPlayer;
 
 	// Use this for initialization
 	void Start () {
@@ -36,6 +38,7 @@ public class Player : MonoBehaviour {
 		}
 
 		bubbles = gameObject.GetComponentInChildren<ParticleSystem>();
+		currentPlayer = this;
 	}
 
 	// Do Graphic & Input updates here
@@ -43,10 +46,7 @@ public class Player : MonoBehaviour {
 		if(dead) {			
 			deathCooldown -= Time.deltaTime;
 			if(deathCooldown <= 0) {
-				if(Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0) ) {
-					OxygenBar.refillOxygen();
-					Application.LoadLevel( Application.loadedLevel );
-				}
+				Application.LoadLevel("title");
 			}
 		}
 		else {
@@ -112,7 +112,8 @@ public class Player : MonoBehaviour {
 		// Sky is not a death condition
 		if (collision.gameObject.tag == "Sky") {
 			// Refill oxygen
-			OxygenBar.addOxygen();
+			if (skyOxygenRefill)
+				OxygenBar.addOxygen();
 			return;
 		}
 
@@ -141,7 +142,7 @@ public class Player : MonoBehaviour {
 		Debug.Log ("Player Died");
 		animator.SetTrigger("Death");
 		dead = true;
-		deathCooldown = 0.5f;
+		deathCooldown = 1.0f;
 		rigidbody2D.gravityScale = -buoyancyCoefficient;
 	}
 

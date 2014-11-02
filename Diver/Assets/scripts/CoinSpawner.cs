@@ -3,24 +3,27 @@ using System.Collections;
 
 public class CoinSpawner : Spawner {
 	public GameObject coin;
+	public int coinRate = 10;
 	public GameObject powerUp;
-	public int powerUpRate = 10;
+	public int powerUpRate = 5;
+	public GameObject bubble;
+	public int bubbleRate = 30;
 
 	public override void Spawn() {
 		// Instantiate a random enemy.
 		int index = Random.Range (0, 100);
-		if (index > powerUpRate) {
+		if (index < coinRate) {
 			AddCoins ();
 		}
-		else {
+		if (index < powerUpRate) {
 			AddPowerUp();
+		}
+
+		if (index < bubbleRate) {
+			AddBubble();
 		}
 	}
 
-	static public void test() {
-
-	}
-	
 	void AddCoins() {
 		int pattern = Random.Range (0, 3);
 		Vector3 pos = transform.position;
@@ -54,6 +57,13 @@ public class CoinSpawner : Spawner {
 	void AddPowerUp() {
 		Vector3 pos = transform.position;
 		Add (powerUp, pos);
+	}
+
+	void AddBubble() {
+		Vector3 pos = transform.position;
+		pos.x -= Random.Range (1.0f, 2.0f);
+		pos.y -= Random.Range (0.8f, 1.6f);
+		Add (bubble, pos);
 	}
 	
 	void Add(GameObject obj, Vector3 position) {
