@@ -17,14 +17,16 @@ public class Player : MonoBehaviour {
 
 	public AudioClip swimClip;	
 	public bool godMode = true;
-	public bool skyOxygenRefill = false;
+	public bool skyOxygenRefill = false;	
+
 
 	private float dragCoefficient= 0.5f;
-	private float buoyancyCoefficient= 0.2f;	
+	private float buoyancyCoefficient= 0.2f;		
 	private float startGravity= 0.6f;
 
 	bool poweredUp = false;
 	float invincibilityTimeout = 2.0f;
+	float powerUpTimeout = 5.0f;	
 	bool invicible = false;
 
 	private ParticleSystem bubbles;
@@ -68,6 +70,9 @@ public class Player : MonoBehaviour {
 				Color c = r.color;
 				c.a = 1.0f;
 				r.material.color = c;
+			}
+			if (powerUpTimeout > 0.0f) {
+				powerUpTimeout -= Time.deltaTime;
 			}
 		}
 	}
@@ -132,8 +137,9 @@ public class Player : MonoBehaviour {
 			Color c = r.color;
 			c.a = 0.3f;
 			r.material.color = c;
-			invincibilityTimeout = 2.0f;
-			invicible = true;
+			//invincibilityTimeout = 2.0f;
+			//invicible = true;
+			powerUpTimeout = 5.0f;
 		}
 
 		if (invicible)
@@ -154,6 +160,6 @@ public class Player : MonoBehaviour {
 		if (poweredUp)
 			return;
 		poweredUp = true;
-		transform.localScale += new Vector3 (1.0f, 1.0f, 0.0f);
+		transform.localScale -= new Vector3 (0.5f, 0.5f, 0.5f);
 	}
 }
