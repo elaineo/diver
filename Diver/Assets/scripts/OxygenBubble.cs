@@ -6,6 +6,7 @@ public class OxygenBubble : MonoBehaviour {
 	public float velocity = 0.0f;
 	Vector3 startScale;
 	float startTime;
+	bool popped = false;
 	// Use this for initialization
 	void Start () {
 		startScale = transform.localScale;
@@ -30,9 +31,11 @@ public class OxygenBubble : MonoBehaviour {
 	}
 
 	void Update() {
-		startTime += Time.deltaTime;
-		float scale = 0.1f * Mathf.Sin (6.0f * startTime);
-		transform.localScale = new Vector3 (startScale.x + scale, startScale.y + scale, startScale.z);
+		if (!popped) {
+			startTime += Time.deltaTime;
+			float scale = 0.1f * Mathf.Sin (6.0f * startTime);
+			transform.localScale = new Vector3 (startScale.x + scale, startScale.y + scale, startScale.z);
+		}
 	}
 	
 	IEnumerator FadeAndDestroy() {
@@ -53,6 +56,7 @@ public class OxygenBubble : MonoBehaviour {
 			//Score.AddCoin();
 			OxygenBar.addOxygen(0.25f);
 			//Destroy (this.gameObject);
+			popped = true;
 			StartCoroutine("FadeAndDestroy");
 		}
 	}
