@@ -10,8 +10,8 @@ PlayerSettings:
   targetGlesGraphics: 1
   targetResolution: 0
   accelerometerFrequency: 60
-  companyName: Quill18
-  productName: ClonyBird
+  companyName: DefaultCompany
+  productName: Unity
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   defaultScreenWidth: 1024
@@ -23,7 +23,7 @@ PlayerSettings:
   m_ActiveColorSpace: 0
   m_MTRendering: 1
   m_MobileMTRendering: 0
-  m_UseDX11: 0
+  m_UseDX11: 1
   m_Stereoscopic3D: 0
   iosShowActivityIndicatorOnLoading: -1
   androidShowActivityIndicatorOnLoading: -1
@@ -70,7 +70,7 @@ PlayerSettings:
   iPhoneBundleIdentifier: com.Company.ProductName
   metroEnableIndependentInputSource: 0
   metroEnableLowLatencyPresentationAPI: 0
-  productGUID: af6381affbcee1448985ca1e9fdbdcbf
+  productGUID: 8e76a59d7733b48eb8a3eb6a368cd5b8
   iPhoneBundleVersion: 1.0
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 9
@@ -106,13 +106,9 @@ PlayerSettings:
   AndroidKeystoreName: 
   AndroidKeyaliasName: 
   resolutionDialogBanner: {fileID: 0}
-  m_BuildTargetIcons:
-  - m_BuildTarget: 
-    m_Icons:
-    - m_Icon: {fileID: 0}
-      m_Size: 128
+  m_BuildTargetIcons: []
   m_BuildTargetBatching: []
-  webPlayerTemplate: APPLICATION:No Context Menu
+  webPlayerTemplate: APPLICATION:Default
   m_TemplateCustomTags: {}
   XboxTitleId: 
   XboxImageXexPath: 
@@ -155,7 +151,7 @@ PlayerSettings:
   flashStrippingLevel: 2
   spritePackerPolicy: 
   scriptingDefineSymbols: {}
-  metroPackageName: ClonyBird
+  metroPackageName: Unity
   metroPackageLogo: 
   metroPackageLogo140: 
   metroPackageLogo180: 
@@ -166,7 +162,7 @@ PlayerSettings:
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: ClonyBird
+  metroApplicationDescription: Unity
   metroStoreTileLogo80: 
   metroStoreTileLogo: 
   metroStoreTileLogo140: 
@@ -207,7 +203,7 @@ PlayerSettings:
   metroPhoneSplashScreenImage240: 
   metroTileShortName: 
   metroCommandLineArgsFile: 
-  metroTileShowName: 1
+  metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0
   metroWideTileShowName: 0

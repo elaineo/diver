@@ -239,7 +239,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ee0a95fe4de8fd40aba3a69482c530c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 6
+  moveSpeed: 4
   HP: 2
   deadEnemy: {fileID: 0}
   damagedEnemy: {fileID: 0}
