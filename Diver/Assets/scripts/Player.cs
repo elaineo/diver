@@ -5,7 +5,7 @@ public class Player : MonoBehaviour {
 
 	//Vector3 velocity = Vector3.zero;
 	public float flapSpeed    = 50f;
-	public float forwardSpeed = 1f;
+	public float forwardSpeed = 2f;
 
 	bool didFlap = false;
 
@@ -16,7 +16,7 @@ public class Player : MonoBehaviour {
 
 	public bool godMode = true;
 
-	private float dragCoefficient= 2.5f;
+	private float dragCoefficient= 0.5f;
 	private float buoyancyCoefficient= 2.2f;	
 	private float startGravity= 0.6f;
 
@@ -79,6 +79,11 @@ public class Player : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D collision) {
 		if(godMode)
 			return;
+
+		if (poweredUp) {
+
+			poweredUp = false;
+		}
 
 		animator.SetTrigger("Death");
 		dead = true;
