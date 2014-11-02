@@ -138,7 +138,7 @@ public class Player : MonoBehaviour {
 			c.a = 0.3f;
 			r.material.color = c;
 			//invincibilityTimeout = 2.0f;
-			//invicible = true;
+			invicible = true;
 			powerUpTimeout = 5.0f;
 		}
 
