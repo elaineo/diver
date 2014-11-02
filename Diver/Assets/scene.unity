@@ -2346,10 +2346,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84aece1e682b84343a25a3ffecaa3577, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnTime: 5
-  spawnDelay: 3
+  spawnTime: 2
+  spawnDelay: 1
   enemies:
   - {fileID: 100000, guid: 1605f650e3e0d2a42abc6c963c3d443f, type: 2}
+  - {fileID: 100002, guid: a43a0596880ab4e5492ebe0f8baddc14, type: 2}
 --- !u!4 &566628167
 Transform:
   m_ObjectHideFlags: 0
@@ -3483,6 +3484,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0
   shotDelay: 1
+  moveSpeed: .5
   bullet: {fileID: 100002, guid: 809bc5b46701e469eb768398dc3388af, type: 2}
   canShoot: 1
   explosion: {fileID: 0}
@@ -5239,6 +5241,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0
   shotDelay: 1
+  moveSpeed: .5
   bullet: {fileID: 100002, guid: 809bc5b46701e469eb768398dc3388af, type: 2}
   canShoot: 1
   explosion: {fileID: 0}
