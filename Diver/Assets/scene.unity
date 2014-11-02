@@ -155,6 +155,65 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!1 &130825559
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 130825560}
+  - 131: {fileID: 130825561}
+  - 114: {fileID: 130825562}
+  m_Layer: 0
+  m_Name: BigTankEmpty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &130825560
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 130825559}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1096809702}
+  m_RootOrder: 4
+--- !u!131 &130825561
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 130825559}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 584ff42c7fe54421aa6fbb08d3e8878c, type: 3}
+  m_Color: {r: .5, g: .5, b: .5, a: .5}
+  m_PixelInset:
+    serializedVersion: 2
+    x: -64
+    y: -29
+    width: 96
+    height: 106
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
+--- !u!114 &130825562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 130825559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36e6363facec2416ab009a0c72fcd562, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &178179213
 Prefab:
   m_ObjectHideFlags: 0
@@ -2194,7 +2253,7 @@ Transform:
   m_LocalScale: {x: 0, y: 0, z: 1}
   m_Children: []
   m_Father: {fileID: 1096809702}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!1 &911403529
 GameObject:
   m_ObjectHideFlags: 0
@@ -2412,7 +2471,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1096809702}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!114 &1048461487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2588,9 +2647,11 @@ Transform:
   m_LocalPosition: {x: .5, y: .5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1920403129}
   - {fileID: 910925161}
   - {fileID: 1155749167}
   - {fileID: 1048461486}
+  - {fileID: 130825560}
   m_Father: {fileID: 0}
   m_RootOrder: 6
 --- !u!1 &1118807167
@@ -2867,7 +2928,7 @@ Transform:
   m_LocalScale: {x: 0, y: 0, z: 1}
   m_Children: []
   m_Father: {fileID: 1096809702}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!1001 &1188522402
 Prefab:
   m_ObjectHideFlags: 0
@@ -4543,6 +4604,53 @@ MonoBehaviour:
   powerUp: {fileID: 0}
   dead: 0
   godMode: 1
+--- !u!1 &1920403128
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1920403129}
+  - 131: {fileID: 1920403130}
+  m_Layer: 0
+  m_Name: BigTank
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1920403129
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1920403128}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1096809702}
+  m_RootOrder: 0
+--- !u!131 &1920403130
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1920403128}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 758eb83783a1b4db1bea81ecc633ecc7, type: 3}
+  m_Color: {r: .5, g: .5, b: .5, a: .5}
+  m_PixelInset:
+    serializedVersion: 2
+    x: -64
+    y: -29
+    width: 96
+    height: 106
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
 --- !u!1 &2081929377
 GameObject:
   m_ObjectHideFlags: 0
