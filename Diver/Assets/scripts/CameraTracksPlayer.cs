@@ -28,5 +28,6 @@ public class CameraTracksPlayer : MonoBehaviour {
 			pos.x = player.position.x + offsetX;
 			transform.position = pos;
 		}
+
 	}
 }

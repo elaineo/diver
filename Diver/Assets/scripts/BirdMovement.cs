@@ -74,7 +74,6 @@ public class BirdMovement : MonoBehaviour {
 		}
 		rigidbody2D.drag = rigidbody2D.velocity.magnitude * dragCoefficient;
 		rigidbody2D.gravityScale = (buoyancyCoefficient - rigidbody2D.position.y) * startGravity;
-		Debug.Log(rigidbody2D.gravityScale);
 	}
 
 	void OnCollisionEnter2D(Collision2D collision) {
