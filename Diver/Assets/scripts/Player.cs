@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BirdMovement : MonoBehaviour {
+public class Player : MonoBehaviour {
 
-	Vector3 velocity = Vector3.zero;
+	//Vector3 velocity = Vector3.zero;
 	public float flapSpeed    = 50f;
-	public float forwardSpeed = 1f;
+	public float forwardSpeed = 2f;
 
 	bool didFlap = false;
 
@@ -16,9 +16,11 @@ public class BirdMovement : MonoBehaviour {
 
 	public bool godMode = true;
 
-	private float dragCoefficient= 2.5f;
+	private float dragCoefficient= 0.5f;
 	private float buoyancyCoefficient= 2.2f;	
 	private float startGravity= 0.6f;
+
+	bool poweredUp = false;
 
 	// Use this for initialization
 	void Start () {
@@ -60,8 +62,6 @@ public class BirdMovement : MonoBehaviour {
 		if(didFlap) {
 			rigidbody2D.AddForce( Vector2.up * flapSpeed );
 			animator.SetTrigger("DoFlap");
-
-
 			didFlap = false;
 		}
 
@@ -80,8 +80,20 @@ public class BirdMovement : MonoBehaviour {
 		if(godMode)
 			return;
 
+		if (poweredUp) {
+
+			poweredUp = false;
+		}
+
 		animator.SetTrigger("Death");
 		dead = true;
 		deathCooldown = 0.5f;
+	}
+
+	public void PowerUp() {
+		if (poweredUp)
+			return;
+		poweredUp = true;
+		transform.localScale += new Vector3 (1.0f, 1.0f, 0.0f);
 	}
 }

@@ -10,7 +10,7 @@ public class Score : MonoBehaviour {
 	static Score instance;
 
 	static public void AddPoint() {
-		if(instance.bird.dead)
+		if(instance.player.dead)
 			return;
 
 		score++;
@@ -24,7 +24,7 @@ public class Score : MonoBehaviour {
 		coins++;
 	}
 
-	BirdMovement bird;
+	Player player;
 
 	void Start() {
 		instance = this;
@@ -33,7 +33,7 @@ public class Score : MonoBehaviour {
 			Debug.LogError("Could not find an object with tag 'Player'.");
 		}
 
-		bird = player_go.GetComponent<BirdMovement>();
+		player = player_go.GetComponent<Player>();
 		score = 0;
 		highScore = PlayerPrefs.GetInt("highScore", 0);
 		coins = PlayerPrefs.GetInt ("coins", 0);

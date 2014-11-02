@@ -12,7 +12,7 @@ GameObject:
   - 50: {fileID: 5000000}
   - 58: {fileID: 5800000}
   m_Layer: 0
-  m_Name: PlayerBird
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -112,10 +112,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ca8e8299fd384b47846101b2d51ef0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  velocity: {x: 0, y: 0, z: 0}
   flapSpeed: 50
   forwardSpeed: 1
+  didFlap: 0
+  animator: {fileID: 0}
   dead: 0
+  deathCooldown: 0
   godMode: 1
+  dragCoefficient: 2.5
+  buoyancyCoefficient: 2.20000005
+  startGravity: .600000024
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
