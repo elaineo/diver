@@ -11,11 +11,15 @@ public class OxygenBar : MonoBehaviour {
 		oxygen = oxygenMax;
 	}
 
-	public static void addOxygen() {
-		oxygen += oxygenGainRate;
+	public static void addOxygen(float amount) {
+		oxygen += amount;
 		if (oxygen > oxygenMax) {
 			oxygen = oxygenMax;
 		}
+	}
+
+	public static void addOxygen() {
+		addOxygen (oxygenGainRate);
 	}
 
 	public static float Oxygen() {

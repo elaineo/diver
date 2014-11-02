@@ -14,6 +14,7 @@ public class TitleScript : MonoBehaviour {
 			StartCoroutine(Transition());
 			//Application.LoadLevel("scene");
 		}
+		else if (Input.GetKeyDown(KeyCode.Escape)) { Application.Quit(); }
 	}
 
 	IEnumerator Transition() {
