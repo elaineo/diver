@@ -37,7 +37,7 @@ public class Coin : MonoBehaviour {
 		if (collider.tag == "Player") {
 			Score.AddCoin();
 			AudioSource.PlayClipAtPoint(coinClip, transform.position);
-			//Destroy (this.gameObject);
+			Destroy (this.gameObject);
 			StartCoroutine("FadeAndDestroy");
 		}
 	}
