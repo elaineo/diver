@@ -21,6 +21,8 @@ public class Player : MonoBehaviour {
 	private float startGravity= 0.6f;
 
 	bool poweredUp = false;
+	float invincibilityTimeout = 2.0f;
+	bool invicible = false;
 
 	// Use this for initialization
 	void Start () {
@@ -35,7 +37,6 @@ public class Player : MonoBehaviour {
 	void Update() {
 		if(dead) {
 			deathCooldown -= Time.deltaTime;
-
 			if(deathCooldown <= 0) {
 				if(Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0) ) {
 					Application.LoadLevel( Application.loadedLevel );
@@ -45,6 +46,17 @@ public class Player : MonoBehaviour {
 		else {
 			if(Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0) ) {
 				didFlap = true;
+			}
+
+			if (invincibilityTimeout > 0.0f) {
+				invincibilityTimeout -= Time.deltaTime;
+			}
+			else if (invicible) {
+				invicible = false;
+				SpriteRenderer r = gameObject.GetComponentInChildren<SpriteRenderer>();
+				Color c = r.color;
+				c.a = 1.0f;
+				r.material.color = c;
 			}
 		}
 	}
@@ -81,9 +93,18 @@ public class Player : MonoBehaviour {
 			return;
 
 		if (poweredUp) {
-
 			poweredUp = false;
+			transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);			
+			SpriteRenderer r = gameObject.GetComponentInChildren<SpriteRenderer>();
+			Color c = r.color;
+			c.a = 0.5f;
+			r.material.color = c;
+			invincibilityTimeout = 2.0f;
+			invicible = true;
 		}
+
+		if (invicible)
+			return;
 
 		animator.SetTrigger("Death");
 		dead = true;
