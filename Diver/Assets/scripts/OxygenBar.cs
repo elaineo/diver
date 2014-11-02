@@ -28,7 +28,7 @@ public class OxygenBar : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+		oxygen = 1;
 	}
 	
 	// Update is called once per frame
