@@ -44,7 +44,8 @@ MonoBehaviour:
   enemies:
   - {fileID: 100000, guid: f73b45a53620f4ec3952b628ead079f5, type: 2}
   coin: {fileID: 100000, guid: f73b45a53620f4ec3952b628ead079f5, type: 2}
-  powerUp: {fileID: 0}
+  powerUp: {fileID: 100000, guid: f14dbcaff6a37413480c7a6f7f7a4638, type: 2}
+  powerUpRate: 10
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
