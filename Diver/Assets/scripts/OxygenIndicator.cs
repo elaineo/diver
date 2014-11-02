@@ -13,9 +13,11 @@ public class OxygenIndicator : MonoBehaviour {
 		float oxygen = OxygenBar.Oxygen();
 		if (oxygen < warning_level) {
 			guiTexture.texture = Resources.Load ("oxygenbar_red") as Texture;
+		} else {
+			guiTexture.texture = Resources.Load ("oxygenbar_green") as Texture;
 		}
 		if (oxygen <= level) {
 			guiTexture.texture = Resources.Load ("oxygenbar_empty") as Texture;
-		}
+		} 
 	}
 }
