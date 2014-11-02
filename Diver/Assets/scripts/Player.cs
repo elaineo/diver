@@ -25,6 +25,8 @@ public class Player : MonoBehaviour {
 	float invincibilityTimeout = 2.0f;
 	bool invicible = false;
 
+	private ParticleSystem bubbles;
+
 	// Use this for initialization
 	void Start () {
 		animator = transform.GetComponentInChildren<Animator>();
@@ -32,6 +34,8 @@ public class Player : MonoBehaviour {
 		if(animator == null) {
 			Debug.LogError("Didn't find animator!");
 		}
+
+		bubbles = gameObject.GetComponentInChildren<ParticleSystem>();
 	}
 
 	// Do Graphic & Input updates here
@@ -48,6 +52,7 @@ public class Player : MonoBehaviour {
 		else {
 			if(Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0) ) {
 				didFlap = true;
+				bubbles.Play();
 			}
 
 			if (invincibilityTimeout > 0.0f) {
