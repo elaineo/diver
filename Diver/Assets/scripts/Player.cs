@@ -73,7 +73,7 @@ public class Player : MonoBehaviour {
 			transform.rotation = Quaternion.Euler(0, 0, angle);
 		}
 		rigidbody2D.drag = rigidbody2D.velocity.magnitude * dragCoefficient;
-		rigidbody2D.gravityScale = (buoyancyCoefficient - rigidbody2D.position.y) * startGravity;
+		rigidbody2D.gravityScale = (buoyancyCoefficient - rigidbody2D.position.y) * startGravity+0.2f;
 	}
 
 	void OnCollisionEnter2D(Collision2D collision) {
