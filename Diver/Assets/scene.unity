@@ -1139,11 +1139,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 975241606}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84aece1e682b84343a25a3ffecaa3577, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ec5553325356463fa177cc8a9de9813, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   spawnTime: 5
-  spawnDelay: 3
+  spawnDelay: 0
   enemies:
   - {fileID: 100000, guid: f73b45a53620f4ec3952b628ead079f5, type: 2}
 --- !u!4 &975241608
@@ -1195,7 +1195,7 @@ GUIText:
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2
-    rgba: 4278190080
+    rgba: 4294967295
   m_PixelCorrect: 1
   m_RichText: 1
 --- !u!4 &1048461486

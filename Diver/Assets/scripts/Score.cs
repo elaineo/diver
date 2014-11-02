@@ -5,6 +5,7 @@ public class Score : MonoBehaviour {
 
 	static int score = 0;
 	static int highScore = 0;
+	static int coins = 0;
 
 	static Score instance;
 
@@ -19,6 +20,10 @@ public class Score : MonoBehaviour {
 		}
 	}
 
+	static public void AddCoin() {
+		coins++;
+	}
+
 	BirdMovement bird;
 
 	void Start() {
@@ -31,16 +36,18 @@ public class Score : MonoBehaviour {
 		bird = player_go.GetComponent<BirdMovement>();
 		score = 0;
 		highScore = PlayerPrefs.GetInt("highScore", 0);
+		coins = PlayerPrefs.GetInt ("coins", 0);
 	}
 
 	void OnDestroy() {
 		instance = null;
 		PlayerPrefs.SetInt("highScore", highScore);
+		PlayerPrefs.SetInt ("coins", coins);
 	}
 
 	void Update () {
 		GameObject player_go = GameObject.FindGameObjectWithTag("Player");
 		float x = player_go.rigidbody2D.position.x;
-		guiText.text = "Score: " + x.ToString("F2") + "\nHigh Score: " + highScore;
+		guiText.text = "Coins: " + coins.ToString() + "\nScore: " + x.ToString("F2") + "\nHigh Score: " + highScore;
 	}
 }
