@@ -10,7 +10,10 @@ public class Coin : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+		Vector3 pos = transform.position;
+		Vector3 camxy = Camera.main.WorldToScreenPoint(pos);		
+		if (camxy.x < 0)
+			Destroy(this.gameObject);
 	}
 
 	IEnumerator FadeAndDestroy() {
