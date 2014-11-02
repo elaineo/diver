@@ -3,9 +3,9 @@
 //This script will handle the bullet adding itself back to the pool
 public class Bullet : MonoBehaviour
 {
-	public int speed = 10;			//How fast the bullet moves
+	public int speed = 3;			//How fast the bullet moves
 	public float lifeTime = 1;		//How long the bullet lives in seconds
-	public int power = 1;			//Power of the bullet
+	public int power = 10;			//Power of the bullet
 
 
 	void OnCollisionEnter2D(Collision2D collision) {
