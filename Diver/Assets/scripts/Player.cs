@@ -89,7 +89,15 @@ public class Player : MonoBehaviour {
 	}
 
 	void OnCollisionEnter2D(Collision2D collision) {
-		if(godMode)
+		// Sky is not a death condition
+		if (collision.gameObject.tag == "Sky") {
+			// Refill oxygen
+			OxygenBar.addOxygen(0.05f);
+			return;
+		}
+
+		// Check death conditions
+		if (godMode)
 			return;
 
 		if (poweredUp) {
