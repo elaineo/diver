@@ -4,6 +4,7 @@ using System.Collections;
 public class OxygenBubble : MonoBehaviour {
 	public float acceleration = 1.0f;
 	public float velocity = 0.0f;
+	public AudioClip popClip;	
 	Vector3 startScale;
 	float startTime;
 	bool popped = false;
@@ -57,6 +58,7 @@ public class OxygenBubble : MonoBehaviour {
 			OxygenBar.addOxygen(0.25f);
 			//Destroy (this.gameObject);
 			popped = true;
+			AudioSource.PlayClipAtPoint(popClip, transform.position);
 			StartCoroutine("FadeAndDestroy");
 		}
 	}

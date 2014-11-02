@@ -84,6 +84,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7df1d6befd7744dc9965c4a725df5a4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  swimClip: {fileID: 8300000, guid: 6d7d9dfe3a9e5384081b429e1fa47ade, type: 3}
   maxNumberOfDirectionChanges: 3
 --- !u!212 &21200000
 SpriteRenderer:

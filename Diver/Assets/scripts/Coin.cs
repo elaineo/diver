@@ -3,6 +3,8 @@ using System.Collections;
 
 public class Coin : MonoBehaviour {
 
+	public AudioClip coinClip;	
+
 	// Use this for initialization
 	void Start () {
 	
@@ -34,6 +36,7 @@ public class Coin : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D collider) {
 		if (collider.tag == "Player") {
 			Score.AddCoin();
+			AudioSource.PlayClipAtPoint(coinClip, transform.position);
 			//Destroy (this.gameObject);
 			StartCoroutine("FadeAndDestroy");
 		}

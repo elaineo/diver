@@ -15,6 +15,7 @@ public class Player : MonoBehaviour {
 	public bool dead = false;
 	float deathCooldown;
 
+	public AudioClip swimClip;	
 	public bool godMode = true;
 	public bool skyOxygenRefill = false;
 
@@ -52,6 +53,9 @@ public class Player : MonoBehaviour {
 		else {
 			if(Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0) ) {
 				didFlap = true;
+				//Debug.Log(swimClip.isPlaying);
+				// if (!swimClip.isPlaying)
+				AudioSource.PlayClipAtPoint(swimClip, transform.position);
 				bubbles.Play();
 			}
 

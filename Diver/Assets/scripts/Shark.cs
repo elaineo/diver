@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Shark : MonoBehaviour {
 
+	public AudioClip swimClip;	
 	int numberOfDirectionChanges = 0;
 	float sharkSpeed = 1.5f;
 	bool goingUp = false;
@@ -43,12 +44,14 @@ public class Shark : MonoBehaviour {
 				if (! goingUp) {
 					goingUp = true;
 					numberOfDirectionChanges += 1;
+					AudioSource.PlayClipAtPoint(swimClip, transform.position);
 				}
 			} else {
 				rigidbody2D.AddForce (-Vector2.up * sharkSpeed);
 				if (goingUp) {
 					goingUp = false;
 					numberOfDirectionChanges += 1;
+					AudioSource.PlayClipAtPoint(swimClip, transform.position);
 				}
 			}
 		}
