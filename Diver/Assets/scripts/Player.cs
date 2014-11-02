@@ -73,6 +73,7 @@ public class Player : MonoBehaviour {
 				r.material.color = c;
 			}
 			if (powerUpTimeout > 0.0f) {
+				Debug.Log(powerUpTimeout);
 				powerUpTimeout -= Time.deltaTime;
 			}
 		}
@@ -163,5 +164,6 @@ public class Player : MonoBehaviour {
 		poweredUp = true;
 		transform.localScale -= new Vector3 (0.5f, 0.5f, 0.5f);
 		AudioSource.PlayClipAtPoint(powerClip, transform.position);
+		//invicible = true;
 	}
 }
