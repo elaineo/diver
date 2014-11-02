@@ -7,11 +7,19 @@ public class OxygenBar : MonoBehaviour {
 	static float oxygenGainRate = 0.03f;
 	static float oxygen = 1;
 
+	public static void refillOxygen() {
+		oxygen = oxygenMax;
+	}
+
 	public static void addOxygen() {
 		oxygen += oxygenGainRate;
 		if (oxygen > oxygenMax) {
 			oxygen = oxygenMax;
 		}
+	}
+
+	public static float Oxygen() {
+		return oxygen;
 	}
 
 	// Use this for initialization

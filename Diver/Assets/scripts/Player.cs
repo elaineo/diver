@@ -6,6 +6,7 @@ public class Player : MonoBehaviour {
 	//Vector3 velocity = Vector3.zero;
 	public float flapSpeed    = 50f;
 	public float forwardSpeed = 2f;
+	public GameObject powerUp;
 
 	bool didFlap = false;
 
@@ -35,10 +36,11 @@ public class Player : MonoBehaviour {
 
 	// Do Graphic & Input updates here
 	void Update() {
-		if(dead) {
+		if(dead) {			
 			deathCooldown -= Time.deltaTime;
 			if(deathCooldown <= 0) {
 				if(Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0) ) {
+					OxygenBar.refillOxygen();
 					Application.LoadLevel( Application.loadedLevel );
 				}
 			}
@@ -67,6 +69,11 @@ public class Player : MonoBehaviour {
 
 		if(dead)
 			return;
+
+		if (OxygenBar.Oxygen () <= 0.0f) {
+			die ();
+			return;
+		}
 
 		rigidbody2D.AddForce( Vector2.right * forwardSpeed );
 
@@ -114,6 +121,11 @@ public class Player : MonoBehaviour {
 		if (invicible)
 			return;
 
+		die ();
+	}
+
+	void die() {
+		Debug.Log ("Player Died");
 		animator.SetTrigger("Death");
 		dead = true;
 		deathCooldown = 0.5f;
