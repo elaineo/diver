@@ -8,14 +8,11 @@ public class Bullet : MonoBehaviour
 	public int power = 1;			//Power of the bullet
 
 
-	void OnCollisionEnter2D(Collision2D collision) {		
-		if (collision.gameObject.tag == "Enemy" || collision.gameObject.tag== "Bullet") {
-			// also check if block
-			Debug.Log ("Bullet shot : " + collision.gameObject.tag);
-//			rigidbody2D.simulated = false;
-//			Destroy(this.gameObject);
-		}
-
+	void OnCollisionEnter2D(Collision2D collision) {
+		Debug.Log("bullet hit :" + collision.gameObject.tag);
+		//Destroy(this.gameObject);
+		if (collision.gameObject.tag=="Enemy" || collision.gameObject.tag=="Player")
+			Destroy(this.gameObject);
 	}
 
 	void OnEnable ()
