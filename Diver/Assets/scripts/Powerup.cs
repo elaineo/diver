@@ -4,21 +4,32 @@ using System.Collections;
 public class Powerup : MonoBehaviour {
 	public float lifespan = 2;
 	bool fading;
+	float startTime;
 
 	// Use this for initialization
 	public void Start () {
 		fading = false;
+		startTime = Time.realtimeSinceStartup;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
+	}
+
+	void FixedUpdate() {
 		lifespan -= Time.deltaTime;
 		if (lifespan <= 0 && !fading) {
 			StartCoroutine("FadeAndDestroy");
 			fading = true;
 		}
-
-		transform.Translate (-1.0f * Time.deltaTime, 0, 0);
+		
+		float deltaTime = Time.realtimeSinceStartup - startTime;
+		float yDelta = 0.6f + 0.8f * Mathf.Sin (deltaTime * 2.0f);
+		Vector3 pos = transform.position;
+		pos.x += -1.0f * Time.deltaTime;
+		pos.y = yDelta;
+		transform.position = pos;
 	}
 
 	IEnumerator FadeAndDestroy() {

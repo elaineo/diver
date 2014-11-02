@@ -4,11 +4,12 @@ using System.Collections;
 public class CoinSpawner : Spawner {
 	public GameObject coin;
 	public GameObject powerUp;
+	public int powerUpRate = 10;
 
 	public override void Spawn() {
 		// Instantiate a random enemy.
-		int index = Random.Range (0, 10);
-		if (index < 8) {
+		int index = Random.Range (0, 100);
+		if (index > powerUpRate) {
 			AddCoins ();
 		}
 		else {

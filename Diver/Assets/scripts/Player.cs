@@ -85,7 +85,7 @@ public class Player : MonoBehaviour {
 			transform.rotation = Quaternion.Euler(0, 0, angle);
 		}
 		rigidbody2D.drag = rigidbody2D.velocity.magnitude * dragCoefficient;
-		rigidbody2D.gravityScale = (buoyancyCoefficient - rigidbody2D.position.y) * startGravity+0.2f;
+		//rigidbody2D.gravityScale = (buoyancyCoefficient - rigidbody2D.position.y) * startGravity+0.2f;
 	}
 
 	void OnCollisionEnter2D(Collision2D collision) {
@@ -97,7 +97,7 @@ public class Player : MonoBehaviour {
 			transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);			
 			SpriteRenderer r = gameObject.GetComponentInChildren<SpriteRenderer>();
 			Color c = r.color;
-			c.a = 0.5f;
+			c.a = 0.3f;
 			r.material.color = c;
 			invincibilityTimeout = 2.0f;
 			invicible = true;
