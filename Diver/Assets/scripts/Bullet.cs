@@ -11,8 +11,9 @@ public class Bullet : MonoBehaviour
 	void OnCollisionEnter2D(Collision2D collision) {
 		Debug.Log("bullet hit :" + collision.gameObject.tag);
 		//Destroy(this.gameObject);
-		if (collision.gameObject.tag=="Enemy" || collision.gameObject.tag=="Player")
+		if (collision.gameObject.tag=="Enemy" || collision.gameObject.tag=="Player" || collision.gameObject.tag=="blockset" ||  collision.gameObject.tag=="Sky" ||  collision.gameObject.tag=="Sand")
 			Destroy(this.gameObject);
+
 	}
 
 	void OnEnable ()
