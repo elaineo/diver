@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class GroundMover : MonoBehaviour {
-
+	public float parallaxStrength = 0.75f;
 	Rigidbody2D player;
 
 	void Start () {
@@ -18,7 +18,7 @@ public class GroundMover : MonoBehaviour {
 	}
 
 	void FixedUpdate() {
-		float vel = player.velocity.x * 0.75f;
+		float vel = player.velocity.x * parallaxStrength;
 
 		transform.position = transform.position + Vector3.right * vel * Time.deltaTime;
 	}
