@@ -92,7 +92,7 @@ public class Player : MonoBehaviour {
 		// Sky is not a death condition
 		if (collision.gameObject.tag == "Sky") {
 			// Refill oxygen
-			OxygenBar.addOxygen(0.05f);
+			OxygenBar.addOxygen();
 			return;
 		}
 

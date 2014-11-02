@@ -3,11 +3,12 @@ using System.Collections;
 
 public class OxygenBar : MonoBehaviour {
 	static float oxygenMax = 1;
-	static float oxygenRate = 0.05f;
+	static float oxygenLossRate = 0.05f;
+	static float oxygenGainRate = 0.03f;
 	static float oxygen = 1;
 
-	public static void addOxygen(float amount) {
-		oxygen += amount;
+	public static void addOxygen() {
+		oxygen += oxygenGainRate;
 		if (oxygen > oxygenMax) {
 			oxygen = oxygenMax;
 		}
@@ -20,12 +21,11 @@ public class OxygenBar : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		oxygen -= oxygenRate * Time.deltaTime;
+		oxygen -= oxygenLossRate * Time.deltaTime;
 		oxygen = Mathf.Max (0.0f, oxygen);
 		Rect rect = guiTexture.pixelInset;
 		rect.width = 128.0f*oxygen;
 		guiTexture.pixelInset = rect;
-		
 	}
 	
 	void FixedUpdate () {
