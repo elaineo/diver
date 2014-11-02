@@ -58,7 +58,6 @@ public class BGLooper : MonoBehaviour {
 			shineCounter++;
 			if (shineCounter%2 == 0) {
 				int r = Random.Range(0, 3);
-				r = 2;
 				string[] levels = {"LevelA", "Level_B", "Level_C"};
 				Debug.Log (r);
 				switch (r) {
