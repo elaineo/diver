@@ -1091,11 +1091,11 @@ GUITexture:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 910925158}
   m_Enabled: 1
-  m_Texture: {fileID: 2800000, guid: 878e08147d81844e19c86da225f8b624, type: 3}
+  m_Texture: {fileID: 2800000, guid: 013503885aef04c3987d216d47e08ba2, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: .501960814}
   m_PixelInset:
     serializedVersion: 2
-    x: -64
+    x: 0
     y: 0
     width: 128
     height: 10
@@ -1110,7 +1110,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 910925158}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .100000001, y: .920000017, z: 0}
+  m_LocalPosition: {x: .0199999996, y: .920000017, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1364,11 +1364,11 @@ GUITexture:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1155749164}
   m_Enabled: 1
-  m_Texture: {fileID: 2800000, guid: 878e08147d81844e19c86da225f8b624, type: 3}
-  m_Color: {r: .863083184, g: 1, b: .00735294819, a: .501960814}
+  m_Texture: {fileID: 2800000, guid: 013503885aef04c3987d216d47e08ba2, type: 3}
+  m_Color: {r: .00735294819, g: .548174322, b: 1, a: .501960814}
   m_PixelInset:
     serializedVersion: 2
-    x: -64
+    x: 0
     y: 0
     width: 128
     height: 10
@@ -1383,7 +1383,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1155749164}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .100000001, y: .870000005, z: 0}
+  m_LocalPosition: {x: .0199999996, y: .870000005, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
