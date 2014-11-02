@@ -54,7 +54,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   acceleration: .300000012
   velocity: 0
-  popClip: {fileID: 8300000, guid: d4e0b720548ee1d49b3841df1d250678, type: 3}
+  popClip: {fileID: 8300000, guid: 5a52d778b6d67df449551019aad5dbce, type: 3}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
