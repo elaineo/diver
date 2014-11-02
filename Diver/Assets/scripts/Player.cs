@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BirdMovement : MonoBehaviour {
+public class Player : MonoBehaviour {
 
 	Vector3 velocity = Vector3.zero;
 	public float flapSpeed    = 50f;
@@ -60,8 +60,6 @@ public class BirdMovement : MonoBehaviour {
 		if(didFlap) {
 			rigidbody2D.AddForce( Vector2.up * flapSpeed );
 			animator.SetTrigger("DoFlap");
-
-
 			didFlap = false;
 		}
 
@@ -85,4 +83,6 @@ public class BirdMovement : MonoBehaviour {
 		dead = true;
 		deathCooldown = 0.5f;
 	}
+
+	void OnTrigger
 }
