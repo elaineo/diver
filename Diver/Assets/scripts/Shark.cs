@@ -22,8 +22,6 @@ public class Shark : MonoBehaviour {
 			rigidbody2D.AddForce (-Vector2.up * sharkSpeed);
 			goingUp = false;
 		}
-		Debug.Log (player_y);
-		Debug.Log (shark_y);
 	}
 	
 	// Update is called once per frame
