@@ -50,6 +50,15 @@ public class BGLooper : MonoBehaviour {
 		}
 
 		Vector3 pos = collider.transform.position;
+		if ("Shine" == collider.tag) {
+			int r = Random.Range(1, 6);
+			// Put block
+			GameObject obj = Resources.Load ("blockset_normal_" + r, typeof(GameObject)) as GameObject;
+			Instantiate (obj, pos, transform.rotation);
+			obj = Resources.Load ("coin", typeof(GameObject)) as GameObject;
+			Instantiate (obj, pos, transform.rotation);
+		}
+		// Move bg, but kill everything else
 		if (hs.Contains (collider.tag)) {
 			float widthOfBGObject = ((BoxCollider2D)collider).size.x;
 			pos.x += widthOfBGObject * panelCount;
@@ -60,16 +69,8 @@ public class BGLooper : MonoBehaviour {
 			}
 
 			collider.transform.position = pos;
-
 		}
-		if ("Shine" == collider.tag) {
-			int r = Random.Range(1, 6);
-			// Put block
-			GameObject obj = Resources.Load ("blockset_normal_" + r, typeof(GameObject)) as GameObject;
-			Instantiate (obj, pos, transform.rotation);
-			obj = Resources.Load ("coin", typeof(GameObject)) as GameObject;
-			Instantiate (obj, pos, transform.rotation);
-		} else if ("blockset" == collider.tag) {
+ 		else {
 			Destroy(collider.gameObject);
 		}
 
