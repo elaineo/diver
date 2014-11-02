@@ -39,6 +39,8 @@ public class Score : MonoBehaviour {
 	}
 
 	void Update () {
-		guiText.text = "Score: " + score + "\nHigh Score: " + highScore;
+		GameObject player_go = GameObject.FindGameObjectWithTag("Player");
+		float x = player_go.rigidbody2D.position.x;
+		guiText.text = "Score: " + x.ToString("F2") + "\nHigh Score: " + highScore;
 	}
 }
