@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class guiScale : MonoBehaviour {
-	const float REFERENCE_SCREEN_WIDTH = 690.0f;
+	const float REFERENCE_SCREEN_WIDTH = 800.0f;
 	// Use this for initialization
 	void Start () {
 		float scaleFactor = (Screen.width/REFERENCE_SCREEN_WIDTH);
