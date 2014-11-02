@@ -1063,7 +1063,7 @@ MonoBehaviour:
   spawnDelay: 0
   enemies:
   - {fileID: 100000, guid: f73b45a53620f4ec3952b628ead079f5, type: 2}
-  coin: {fileID: 0}
+  coin: {fileID: 100000, guid: f73b45a53620f4ec3952b628ead079f5, type: 2}
 --- !u!4 &975241608
 Transform:
   m_ObjectHideFlags: 0
