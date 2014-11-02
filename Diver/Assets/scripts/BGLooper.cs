@@ -57,10 +57,17 @@ public class BGLooper : MonoBehaviour {
 		if ("Shine" == collider.tag) {
 			shineCounter++;
 			if (shineCounter%2 == 0) {
-				int r = Random.Range(0, 1);
+				int r = Random.Range(0, 2);
 				string[] levels = {"LevelA", "Level_B"};
 				Debug.Log (r);
-				pos.y = 1.25f;
+				switch (r) {
+					case 0: 
+					pos.y = 1.25f;
+					break;
+					case 1:
+					pos.y = 1.0f;
+					break;
+				}
 				// Put block
 				GameObject obj = Resources.Load (levels[r], typeof(GameObject)) as GameObject;
 				Instantiate (obj, pos, transform.rotation);
