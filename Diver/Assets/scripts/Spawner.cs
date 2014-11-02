@@ -36,7 +36,7 @@ public class Spawner : MonoBehaviour
 			transform.position = pos;
 		}
 	}
-	void Spawn ()
+	public virtual void Spawn ()
 	{
 		// Instantiate a random enemy.
 		int enemyIndex = Random.Range(0, enemies.Length);
