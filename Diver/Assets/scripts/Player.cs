@@ -101,10 +101,9 @@ public class Player : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D collider) {
-		Debug.Log ("Got hit: " + collider.name);
 		if (collider.name == "PlayerBullet(Clone)") {
 		  	// push it 
-		  	Debug.Log ("Got hit: " + collider.attachedRigidbody.velocity);
+		  	Debug.Log ("player Got shot: " + collider.attachedRigidbody.velocity);
 		  	rigidbody2D.AddForce(collider.attachedRigidbody.velocity);		
 		}
 	}
