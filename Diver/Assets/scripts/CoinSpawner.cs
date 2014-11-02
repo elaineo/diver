@@ -40,6 +40,7 @@ public class CoinSpawner : Spawner {
 			for (int i = 0; i < 5; i++) {
 				int iAdj = i - 2;
 				Add (coin, new Vector3(pos.x + 0.2f * i, pos.y, pos.z));
+				Add (coin, new Vector3(pos.x + 0.2f * i, pos.y - 0.2f, pos.z));
 			}
 			break;
 		}
