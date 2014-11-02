@@ -16,6 +16,10 @@ public class CoinSpawner : Spawner {
 			AddPowerUp();
 		}
 	}
+
+	static public void test() {
+
+	}
 	
 	void AddCoins() {
 		int pattern = Random.Range (0, 3);
@@ -56,3 +60,4 @@ public class CoinSpawner : Spawner {
 		Instantiate (obj, position, transform.rotation);
 	}
 }
+ 
