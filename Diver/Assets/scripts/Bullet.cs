@@ -11,7 +11,7 @@ public class Bullet : MonoBehaviour
 	void OnEnable ()
 	{
 		//Send the bullet "forward"
-		rigidbody2D.velocity = -transform.right.normalized * speed;
+		rigidbody2D.velocity = transform.up.normalized * speed;
 		//Invoke the Die method
 		Invoke ("Die", lifeTime);
 	}
