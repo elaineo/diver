@@ -16,6 +16,7 @@ public class Player : MonoBehaviour {
 	float deathCooldown;
 
 	public AudioClip swimClip;	
+	public AudioClip powerClip;		
 	public bool godMode = true;
 	public bool skyOxygenRefill = false;	
 
@@ -161,5 +162,6 @@ public class Player : MonoBehaviour {
 			return;
 		poweredUp = true;
 		transform.localScale -= new Vector3 (0.5f, 0.5f, 0.5f);
+		AudioSource.PlayClipAtPoint(powerClip, transform.position);
 	}
 }

@@ -2521,7 +2521,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 6ff21ce45b9b16942ab65002bca67f84, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: 6ff21ce45b9b16942ab65002bca67f84, type: 2}
       propertyPath: looping
@@ -5105,6 +5105,7 @@ MonoBehaviour:
   powerUp: {fileID: 0}
   dead: 0
   swimClip: {fileID: 8300000, guid: dac2f14330116fa4da81178d29ee2f06, type: 3}
+  powerClip: {fileID: 8300000, guid: 70d744050a1814d439b9f7569ea79845, type: 3}
   godMode: 1
   skyOxygenRefill: 0
 --- !u!1 &1870822109

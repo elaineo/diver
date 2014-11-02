@@ -172,6 +172,7 @@ MonoBehaviour:
   powerUp: {fileID: 0}
   dead: 0
   swimClip: {fileID: 8300000, guid: dac2f14330116fa4da81178d29ee2f06, type: 3}
+  powerClip: {fileID: 8300000, guid: 70d744050a1814d439b9f7569ea79845, type: 3}
   godMode: 1
   skyOxygenRefill: 0
 --- !u!198 &19800000
