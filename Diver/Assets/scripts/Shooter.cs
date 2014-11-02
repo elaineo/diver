@@ -66,7 +66,8 @@ public class Shooter : MonoBehaviour
 			for(int i = 0; i < shotPositions.Length; i++)
 			{
 				// create a bullet
-				Instantiate(bullet, shotPositions[i].position, shotPositions[i].rotation);
+				//bullet.transform.rotation = Quaternion.Euler(0, 0, 90.0f);
+				Instantiate(bullet, shotPositions[i].position, shotPositions[i].rotation  );
 				//Activate it
 				//obj.SetActive(true);
 				//Debug.Log(obj);
