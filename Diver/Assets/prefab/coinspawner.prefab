@@ -44,11 +44,11 @@ MonoBehaviour:
   enemies:
   - {fileID: 100000, guid: f73b45a53620f4ec3952b628ead079f5, type: 2}
   coin: {fileID: 100000, guid: f73b45a53620f4ec3952b628ead079f5, type: 2}
-  coinRate: 15
+  coinRate: 10
   powerUp: {fileID: 100000, guid: f14dbcaff6a37413480c7a6f7f7a4638, type: 2}
-  powerUpRate: 5
+  powerUpRate: 3
   bubble: {fileID: 100000, guid: 4ccbe857e730043e59555dac657e5027, type: 2}
-  bubbleRate: 60
+  bubbleRate: 40
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
