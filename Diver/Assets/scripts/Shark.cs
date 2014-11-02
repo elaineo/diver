@@ -54,5 +54,9 @@ public class Shark : MonoBehaviour {
 		}
 		Vector3 pos = rigidbody2D.position;
 		rigidbody2D.position = pos;
+
+		Vector3 camxy = Camera.main.WorldToScreenPoint(pos);		
+		if (camxy.x < -Screen.width)
+			Destroy(this.gameObject);		
 	}
 }

@@ -29,6 +29,11 @@ public class Enemy : MonoBehaviour
 
 	void FixedUpdate ()
 	{
+		Vector3 pos = transform.position;
+		Vector3 camxy = Camera.main.WorldToScreenPoint(pos);		
+		if (camxy.x < -Screen.width)
+			Destroy(this.gameObject);
+		
 		// Create an array of all the colliders in front of the enemy.
 		Collider2D[] frontHits = Physics2D.OverlapPointAll(frontCheck.position, 1);
 

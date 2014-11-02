@@ -53,6 +53,11 @@ public class Shooter : MonoBehaviour
 
 		// Set the enemy's velocity to moveSpeed in the x direction.
 		rigidbody2D.velocity = new Vector2(transform.localScale.x * moveSpeed, rigidbody2D.velocity.y);	
+
+		Vector3 pos = transform.position;
+		Vector3 camxy = Camera.main.WorldToScreenPoint(pos);		
+		if (camxy.x < -Screen.width)
+			Destroy(this.gameObject);
 	}
 
 	//Coroutine

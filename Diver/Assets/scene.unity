@@ -604,8 +604,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 16109f493470d485693b5f61eb708588, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
-      value: 6
+  m_EditorClassIdentifier: '"'
 --- !u!1 &196605980
 GameObject:
   m_ObjectHideFlags: 0
@@ -1994,7 +1993,7 @@ Transform:
   m_LocalScale: {x: 2.5, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
 --- !u!114 &261372170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5590,7 +5589,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 6ff21ce45b9b16942ab65002bca67f84, type: 2}
       propertyPath: godMode
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 6ff21ce45b9b16942ab65002bca67f84, type: 2}
       propertyPath: dead
@@ -10797,7 +10796,8 @@ MonoBehaviour:
   forwardSpeed: 1.20000005
   powerUp: {fileID: 0}
   dead: 0
-  godMode: 0
+  godMode: 1
+  skyOxygenRefill: 0
 --- !u!1 &1870822109
 GameObject:
   m_ObjectHideFlags: 0
@@ -10826,7 +10826,7 @@ Animator:
   m_GameObject: {fileID: 1870822109}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9d6b6dad8a0170f46bdcb0dec171ba3c, type: 2}
+  m_Controller: {fileID: 9100000, guid: e4ab16bb3811d27438f5c5a51e8066bc, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -11721,7 +11721,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2055399128}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.2399998, y: 1.22851467, z: -.100000024}
+  m_LocalPosition: {x: 10.2399998, y: 1.25220823, z: -.100000024}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2081929378}
