@@ -1237,7 +1237,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100078}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.567503, y: 1.35569239, z: .127685547}
+  m_LocalPosition: {x: 15.5037374, y: 6.97312355, z: .127685547}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400066}
@@ -2400,7 +2400,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1448051fee4794df7938df6072e0badf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinClip: {fileID: 0}
+  coinClip: {fileID: 8300000, guid: 55a47616f0f77ac4da1c815c9ccc2424, type: 3}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2412,7 +2412,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1448051fee4794df7938df6072e0badf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinClip: {fileID: 0}
+  coinClip: {fileID: 8300000, guid: 55a47616f0f77ac4da1c815c9ccc2424, type: 3}
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2424,7 +2424,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1448051fee4794df7938df6072e0badf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinClip: {fileID: 0}
+  coinClip: {fileID: 8300000, guid: 55a47616f0f77ac4da1c815c9ccc2424, type: 3}
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2436,7 +2436,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1448051fee4794df7938df6072e0badf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinClip: {fileID: 0}
+  coinClip: {fileID: 8300000, guid: 55a47616f0f77ac4da1c815c9ccc2424, type: 3}
 --- !u!114 &11400008
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2448,7 +2448,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1448051fee4794df7938df6072e0badf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinClip: {fileID: 0}
+  coinClip: {fileID: 8300000, guid: 55a47616f0f77ac4da1c815c9ccc2424, type: 3}
 --- !u!114 &11400010
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2460,7 +2460,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1448051fee4794df7938df6072e0badf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinClip: {fileID: 0}
+  coinClip: {fileID: 8300000, guid: 55a47616f0f77ac4da1c815c9ccc2424, type: 3}
 --- !u!114 &11400012
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2472,7 +2472,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1448051fee4794df7938df6072e0badf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinClip: {fileID: 0}
+  coinClip: {fileID: 8300000, guid: 55a47616f0f77ac4da1c815c9ccc2424, type: 3}
 --- !u!114 &11400014
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2484,7 +2484,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1448051fee4794df7938df6072e0badf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinClip: {fileID: 0}
+  coinClip: {fileID: 8300000, guid: 55a47616f0f77ac4da1c815c9ccc2424, type: 3}
 --- !u!114 &11400016
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2496,7 +2496,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1448051fee4794df7938df6072e0badf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinClip: {fileID: 0}
+  coinClip: {fileID: 8300000, guid: 55a47616f0f77ac4da1c815c9ccc2424, type: 3}
 --- !u!114 &11400018
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2508,7 +2508,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1448051fee4794df7938df6072e0badf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinClip: {fileID: 0}
+  coinClip: {fileID: 8300000, guid: 55a47616f0f77ac4da1c815c9ccc2424, type: 3}
 --- !u!114 &11400020
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2520,7 +2520,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1448051fee4794df7938df6072e0badf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinClip: {fileID: 0}
+  coinClip: {fileID: 8300000, guid: 55a47616f0f77ac4da1c815c9ccc2424, type: 3}
 --- !u!114 &11400022
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2532,7 +2532,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1448051fee4794df7938df6072e0badf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinClip: {fileID: 0}
+  coinClip: {fileID: 8300000, guid: 55a47616f0f77ac4da1c815c9ccc2424, type: 3}
 --- !u!114 &11400024
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2544,7 +2544,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1448051fee4794df7938df6072e0badf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinClip: {fileID: 0}
+  coinClip: {fileID: 8300000, guid: 55a47616f0f77ac4da1c815c9ccc2424, type: 3}
 --- !u!114 &11400026
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2556,7 +2556,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1448051fee4794df7938df6072e0badf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinClip: {fileID: 0}
+  coinClip: {fileID: 8300000, guid: 55a47616f0f77ac4da1c815c9ccc2424, type: 3}
 --- !u!114 &11400028
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2568,7 +2568,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1448051fee4794df7938df6072e0badf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinClip: {fileID: 0}
+  coinClip: {fileID: 8300000, guid: 55a47616f0f77ac4da1c815c9ccc2424, type: 3}
 --- !u!114 &11400030
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2580,7 +2580,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1448051fee4794df7938df6072e0badf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinClip: {fileID: 0}
+  coinClip: {fileID: 8300000, guid: 55a47616f0f77ac4da1c815c9ccc2424, type: 3}
 --- !u!114 &11400032
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2592,7 +2592,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1448051fee4794df7938df6072e0badf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinClip: {fileID: 0}
+  coinClip: {fileID: 8300000, guid: 55a47616f0f77ac4da1c815c9ccc2424, type: 3}
 --- !u!114 &11400034
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2604,7 +2604,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1448051fee4794df7938df6072e0badf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinClip: {fileID: 0}
+  coinClip: {fileID: 8300000, guid: 55a47616f0f77ac4da1c815c9ccc2424, type: 3}
 --- !u!114 &11400036
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2616,7 +2616,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1448051fee4794df7938df6072e0badf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinClip: {fileID: 0}
+  coinClip: {fileID: 8300000, guid: 55a47616f0f77ac4da1c815c9ccc2424, type: 3}
 --- !u!114 &11400038
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2628,7 +2628,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1448051fee4794df7938df6072e0badf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinClip: {fileID: 0}
+  coinClip: {fileID: 8300000, guid: 55a47616f0f77ac4da1c815c9ccc2424, type: 3}
 --- !u!114 &11400040
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2640,7 +2640,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1448051fee4794df7938df6072e0badf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinClip: {fileID: 0}
+  coinClip: {fileID: 8300000, guid: 55a47616f0f77ac4da1c815c9ccc2424, type: 3}
 --- !u!114 &11400042
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2652,7 +2652,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1448051fee4794df7938df6072e0badf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinClip: {fileID: 0}
+  coinClip: {fileID: 8300000, guid: 55a47616f0f77ac4da1c815c9ccc2424, type: 3}
 --- !u!114 &11400044
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2664,7 +2664,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1448051fee4794df7938df6072e0badf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinClip: {fileID: 0}
+  coinClip: {fileID: 8300000, guid: 55a47616f0f77ac4da1c815c9ccc2424, type: 3}
 --- !u!114 &11400046
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2676,7 +2676,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1448051fee4794df7938df6072e0badf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinClip: {fileID: 0}
+  coinClip: {fileID: 8300000, guid: 55a47616f0f77ac4da1c815c9ccc2424, type: 3}
 --- !u!114 &11400048
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2688,7 +2688,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1448051fee4794df7938df6072e0badf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinClip: {fileID: 0}
+  coinClip: {fileID: 8300000, guid: 55a47616f0f77ac4da1c815c9ccc2424, type: 3}
 --- !u!114 &11400050
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2700,7 +2700,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1448051fee4794df7938df6072e0badf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinClip: {fileID: 0}
+  coinClip: {fileID: 8300000, guid: 55a47616f0f77ac4da1c815c9ccc2424, type: 3}
 --- !u!114 &11400052
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2712,7 +2712,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1448051fee4794df7938df6072e0badf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinClip: {fileID: 0}
+  coinClip: {fileID: 8300000, guid: 55a47616f0f77ac4da1c815c9ccc2424, type: 3}
 --- !u!114 &11400054
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2724,7 +2724,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1448051fee4794df7938df6072e0badf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinClip: {fileID: 0}
+  coinClip: {fileID: 8300000, guid: 55a47616f0f77ac4da1c815c9ccc2424, type: 3}
 --- !u!114 &11400056
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2736,7 +2736,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1448051fee4794df7938df6072e0badf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinClip: {fileID: 0}
+  coinClip: {fileID: 8300000, guid: 55a47616f0f77ac4da1c815c9ccc2424, type: 3}
 --- !u!114 &11400058
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2748,7 +2748,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1448051fee4794df7938df6072e0badf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinClip: {fileID: 0}
+  coinClip: {fileID: 8300000, guid: 55a47616f0f77ac4da1c815c9ccc2424, type: 3}
 --- !u!114 &11400060
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2760,7 +2760,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1448051fee4794df7938df6072e0badf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinClip: {fileID: 0}
+  coinClip: {fileID: 8300000, guid: 55a47616f0f77ac4da1c815c9ccc2424, type: 3}
 --- !u!114 &11400062
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2772,7 +2772,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1448051fee4794df7938df6072e0badf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinClip: {fileID: 0}
+  coinClip: {fileID: 8300000, guid: 55a47616f0f77ac4da1c815c9ccc2424, type: 3}
 --- !u!114 &11400064
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2784,7 +2784,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1448051fee4794df7938df6072e0badf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinClip: {fileID: 0}
+  coinClip: {fileID: 8300000, guid: 55a47616f0f77ac4da1c815c9ccc2424, type: 3}
 --- !u!114 &11400066
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2796,7 +2796,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1448051fee4794df7938df6072e0badf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinClip: {fileID: 0}
+  coinClip: {fileID: 8300000, guid: 55a47616f0f77ac4da1c815c9ccc2424, type: 3}
 --- !u!114 &11400068
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2808,7 +2808,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1448051fee4794df7938df6072e0badf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinClip: {fileID: 0}
+  coinClip: {fileID: 8300000, guid: 55a47616f0f77ac4da1c815c9ccc2424, type: 3}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
