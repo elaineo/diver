@@ -6,7 +6,7 @@ public class OxygenIndicator : MonoBehaviour {
 	float warning_level = 0.3f;
 	// Use this for initialization
 	void Start () {
-	
+
 	}
 
 	void FixedUpdate () {

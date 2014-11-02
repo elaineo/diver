@@ -280,6 +280,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 191260251}
+  - 114: {fileID: 191260252}
   m_Layer: 0
   m_Name: OxygenIndicatorArray
   m_TagString: Untagged
@@ -311,6 +312,17 @@ Transform:
   - {fileID: 130825560}
   m_Father: {fileID: 1096809702}
   m_RootOrder: 3
+--- !u!114 &191260252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 191260250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16109f493470d485693b5f61eb708588, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &196396470
 Prefab:
   m_ObjectHideFlags: 0
