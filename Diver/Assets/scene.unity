@@ -4219,7 +4219,7 @@ MonoBehaviour:
   powerUp: {fileID: 100000, guid: f14dbcaff6a37413480c7a6f7f7a4638, type: 2}
   powerUpRate: 3
   bubble: {fileID: 100000, guid: 4ccbe857e730043e59555dac657e5027, type: 2}
-  bubbleRate: 20
+  bubbleRate: 40
 --- !u!4 &975241608
 Transform:
   m_ObjectHideFlags: 0

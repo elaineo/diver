@@ -52,7 +52,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b0623a76911540078e782ca590416c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  acceleration: 1
+  acceleration: .300000012
   velocity: 0
   popClip: {fileID: 8300000, guid: 40d1ae25f6ae4d048b0d6a3fea4243c4, type: 3}
 --- !u!212 &21200000

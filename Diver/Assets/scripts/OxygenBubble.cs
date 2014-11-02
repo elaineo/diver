@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class OxygenBubble : MonoBehaviour {
-	public float acceleration = 1.0f;
+	public float acceleration = 0.1f;
 	public float velocity = 0.0f;
 	public AudioClip popClip;	
 	Vector3 startScale;

@@ -61,8 +61,7 @@ public class CoinSpawner : Spawner {
 
 	void AddBubble() {
 		Vector3 pos = transform.position;
-		pos.x -= Random.Range (1.0f, 2.0f);
-		pos.y -= Random.Range (0.8f, 1.6f);
+		pos.y -= 0.5f;
 		Add (bubble, pos);
 	}
 	
