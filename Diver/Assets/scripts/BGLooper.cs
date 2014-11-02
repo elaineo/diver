@@ -33,7 +33,7 @@ public class BGLooper : MonoBehaviour {
 				panelCount = 3;
 				break;
 			case "Sand":
-			panelCount = 12;
+			panelCount = 6;
 				break;
 			default:
 				panelCount = numBGPanels;
