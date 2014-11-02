@@ -2121,6 +2121,7 @@ GameObject:
   - 114: {fileID: 566628166}
   - 212: {fileID: 566628165}
   - 114: {fileID: 566628163}
+  - 95: {fileID: 566628164}
   m_Layer: 0
   m_Name: spawner
   m_TagString: Untagged
@@ -2140,6 +2141,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parallaxStrength: .75
+--- !u!95 &566628164
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 566628162}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9d6b6dad8a0170f46bdcb0dec171ba3c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &566628165
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2683,6 +2699,10 @@ Prefab:
     - target: {fileID: 19800000, guid: 6ff21ce45b9b16942ab65002bca67f84, type: 2}
       propertyPath: InitialModule.maxNumParticles
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 6ff21ce45b9b16942ab65002bca67f84, type: 2}
+      propertyPath: godMode
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6ff21ce45b9b16942ab65002bca67f84, type: 2}
@@ -5249,7 +5269,7 @@ MonoBehaviour:
   forwardSpeed: 1.20000005
   powerUp: {fileID: 0}
   dead: 0
-  godMode: 1
+  godMode: 0
 --- !u!1 &1920403128
 GameObject:
   m_ObjectHideFlags: 0

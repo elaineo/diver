@@ -100,6 +100,11 @@ public class Player : MonoBehaviour {
 		//rigidbody2D.gravityScale = (buoyancyCoefficient - rigidbody2D.position.y) * startGravity+0.2f;
 	}
 
+//	void OnTriggerEnter2D(Collider2D collider) {
+//		Debug.Log ("Got hit: " + collider.name);
+
+//		}
+
 	void OnCollisionEnter2D(Collision2D collision) {
 		// Sky is not a death condition
 		if (collision.gameObject.tag == "Sky") {
