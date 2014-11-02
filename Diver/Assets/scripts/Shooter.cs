@@ -44,13 +44,7 @@ public class Shooter : MonoBehaviour
 
 	protected void Explode ()
 	{
-		//Get a pooled explosion object
-		GameObject obj = ObjectPool.current.GetObject(explosion);
-		//Set its position and rotation
-		obj.transform.position = transform.position;
-		obj.transform.rotation = transform.rotation;
-		//Activate it
-		obj.SetActive (true);
+		//instantiate an explosion
 	}
 
 	//Coroutine
