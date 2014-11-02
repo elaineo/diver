@@ -8,7 +8,7 @@ public class BGLooper : MonoBehaviour {
 	int numBGPanels = 6;
 
 	float pipeMax = 0.8430938f;
-	float pipeMin = -0.003243029f;
+	float pipeMin = 0.13243029f;
 
 	void Start() {
 //		GameObject[] pipes = GameObject.FindGameObjectsWithTag("Pipe");
@@ -33,7 +33,10 @@ public class BGLooper : MonoBehaviour {
 				panelCount = 1;
 				break;
 			case "Sand":
-			panelCount = 1;
+				panelCount = 1;
+				break;
+			case "Shine":
+				panelCount = 1;
 				break;
 			default:
 				panelCount = numBGPanels;
@@ -47,7 +50,8 @@ public class BGLooper : MonoBehaviour {
 
 		pos.x += widthOfBGObject * panelCount;
 
-		if(collider.tag == "Pipe") {
+		if(collider.tag == "Shine") {
+			pos.x += Random.Range (0, 1.0f);
 			pos.y = Random.Range(pipeMin, pipeMax);
 		}
 
