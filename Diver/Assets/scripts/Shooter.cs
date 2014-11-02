@@ -8,6 +8,7 @@ public class Shooter : MonoBehaviour
 {
 	public float speed;						//Ship's speed
 	public float shotDelay;					//Delay between shots
+	public float moveSpeed = 0.5f;		// The speed the enemy moves at.	
 	public GameObject bullet;				//The prefab of this ship's bullet
 	public bool canShoot;					//Can this ship fire?
 	public GameObject explosion;			//The prefab of this ship's explosion
@@ -45,6 +46,13 @@ public class Shooter : MonoBehaviour
 	protected void Explode ()
 	{
 		//instantiate an explosion
+	}
+
+	void FixedUpdate ()
+	{
+
+		// Set the enemy's velocity to moveSpeed in the x direction.
+		rigidbody2D.velocity = new Vector2(transform.localScale.x * moveSpeed, rigidbody2D.velocity.y);	
 	}
 
 	//Coroutine

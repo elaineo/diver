@@ -7,6 +7,9 @@ public class Spawner : MonoBehaviour
 	public float spawnDelay = 3f;		// The amount of time before spawning starts.
 	public GameObject[] enemies;		// Array of enemy prefabs.
 
+	float pipeMax = 0.8430938f;
+	float pipeMin = 0.13243029f;
+
 	Transform player;
 
 	float offsetX;
@@ -40,7 +43,9 @@ public class Spawner : MonoBehaviour
 	{
 		// Instantiate a random enemy.
 		int enemyIndex = Random.Range(0, enemies.Length);
-		Instantiate(enemies[enemyIndex], transform.position, transform.rotation);
+		Vector3 pos = transform.position;
+		pos.y = Random.Range(pipeMin, pipeMax);
+		Instantiate(enemies[enemyIndex], pos, transform.rotation);
 
 		// Play the spawning effect from all of the particle systems.
 		foreach(ParticleSystem p in GetComponentsInChildren<ParticleSystem>())
