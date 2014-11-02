@@ -3,12 +3,12 @@ using System.Collections;
 
 public class CoinSpawner : Spawner {
 	public GameObject coin;
-	GameObject powerUp;
+	public GameObject powerUp;
 
 	public override void Spawn() {
 		// Instantiate a random enemy.
 		int index = Random.Range (0, 10);
-		if (index < 7) {
+		if (index < 8) {
 			AddCoins ();
 		}
 		else {
@@ -48,8 +48,6 @@ public class CoinSpawner : Spawner {
 
 	void AddPowerUp() {
 		Vector3 pos = transform.position;
-		pos.y += 0.5f;
-		pos.x += 0.5f;
 		Add (powerUp, pos);
 	}
 	
