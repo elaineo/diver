@@ -585,7 +585,7 @@ MonoBehaviour:
   flapSpeed: 175
   forwardSpeed: 1.20000005
   dead: 0
-  godMode: 1
+  godMode: 0
 --- !u!1 &472476308
 GameObject:
   m_ObjectHideFlags: 0
@@ -1915,6 +1915,10 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: 3fd3831a6d65c4a0f86537fa6333c363,
         type: 3}
+    - target: {fileID: 11400000, guid: d57c36da0e39748f89e103115253d3f2, type: 2}
+      propertyPath: godMode
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d57c36da0e39748f89e103115253d3f2, type: 2}
   m_RootGameObject: {fileID: 421740385}
