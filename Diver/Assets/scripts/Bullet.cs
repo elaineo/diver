@@ -25,6 +25,7 @@ public class Bullet : MonoBehaviour
 	void Die()
 	{
 		//Add the bullet back to the pool
-		ObjectPool.current.PoolObject (gameObject);
+		//ObjectPool.current.PoolObject (gameObject);
+		Destroy(this.gameObject);
 	}
 }
