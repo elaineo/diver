@@ -18,7 +18,7 @@ public class Player : MonoBehaviour {
 	public bool godMode = true;
 
 	private float dragCoefficient= 0.5f;
-	private float buoyancyCoefficient= 2.2f;	
+	private float buoyancyCoefficient= 0.2f;	
 	private float startGravity= 0.6f;
 
 	bool poweredUp = false;
@@ -134,6 +134,7 @@ public class Player : MonoBehaviour {
 		animator.SetTrigger("Death");
 		dead = true;
 		deathCooldown = 0.5f;
+		rigidbody2D.gravityScale = -buoyancyCoefficient;
 	}
 
 	public void PowerUp() {
