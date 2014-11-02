@@ -21,6 +21,6 @@ public class Explosion : MonoBehaviour
 	void Die()
 	{
 		//Re-add the explosion to the pool
-		ObjectPool.current.PoolObject (gameObject);
+		Destroy(this.gameObject);		
 	}
 }
