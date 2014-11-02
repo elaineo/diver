@@ -25,7 +25,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: -.707106829, y: 0, z: 0, w: .707106829}
-  m_LocalPosition: {x: 1.21075308, y: -.0900000036, z: 0}
+  m_LocalPosition: {x: 1.02430058, y: -.859301925, z: 1.4088846e-07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -47,7 +47,7 @@ ParticleSystem:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  lengthInSec: 5
+  lengthInSec: 3
   startDelay: 0
   speed: 1
   randomSeed: 0
@@ -58,7 +58,7 @@ ParticleSystem:
   InitialModule:
     enabled: 1
     startLifetime:
-      scalar: 2
+      scalar: 3
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -215,10 +215,10 @@ ParticleSystem:
         rgba: 4294967295
       maxColor:
         serializedVersion: 2
-        rgba: 4290155824
+        rgba: 4294967295
       minMaxState: 0
     startSize:
-      scalar: .200000003
+      scalar: .100000001
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -233,7 +233,7 @@ ParticleSystem:
         serializedVersion: 2
         m_Curve:
         - time: 0
-          value: .5
+          value: .099999994
           inSlope: 0
           outSlope: 0
           tangentMode: 0
@@ -275,7 +275,7 @@ ParticleSystem:
       minMaxState: 0
     gravityModifier: 0
     inheritVelocity: 0
-    maxNumParticles: 1000
+    maxNumParticles: 100
   ShapeModule:
     serializedVersion: 2
     enabled: 1
@@ -293,7 +293,7 @@ ParticleSystem:
     enabled: 1
     m_Type: 0
     rate:
-      scalar: 10
+      scalar: 30
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -405,7 +405,7 @@ ParticleSystem:
         m_PostInfinity: 2
       minMaxState: 0
   ColorModule:
-    enabled: 0
+    enabled: 1
     gradient:
       maxGradient:
         key0:
@@ -413,7 +413,7 @@ ParticleSystem:
           rgba: 4294967295
         key1:
           serializedVersion: 2
-          rgba: 4294967295
+          rgba: 2785017855
         key2:
           serializedVersion: 2
           rgba: 0
