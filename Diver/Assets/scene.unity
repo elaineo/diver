@@ -192,7 +192,7 @@ GUITexture:
   m_GameObject: {fileID: 130825559}
   m_Enabled: 1
   m_Texture: {fileID: 2800000, guid: 584ff42c7fe54421aa6fbb08d3e8878c, type: 3}
-  m_Color: {r: .5, g: .5, b: .5, a: .5}
+  m_Color: {r: .5, g: .5, b: .5, a: 0}
   m_PixelInset:
     serializedVersion: 2
     x: -64
