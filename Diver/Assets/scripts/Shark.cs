@@ -35,7 +35,7 @@ public class Shark : MonoBehaviour {
 		float shark_y = rigidbody2D.position.y;
 
 		rigidbody2D.AddForce( Vector2.right * forwardSpeed );
-
+		transform.rotation = Quaternion.Euler(0, 0, 0);
 		if (numberOfDirectionChanges < maxNumberOfDirectionChanges) {
 			if (player_y > shark_y) {
 				rigidbody2D.AddForce (Vector2.up * sharkSpeed);
@@ -55,7 +55,6 @@ public class Shark : MonoBehaviour {
 		}
 		Vector3 pos = rigidbody2D.position;
 		rigidbody2D.position = pos;
-
 		Vector3 camxy = Camera.main.WorldToScreenPoint(pos);		
 		if (camxy.x < -Screen.width)
 			Destroy(this.gameObject);		
