@@ -72,8 +72,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
-  m_LocalRotation: {x: .707065284, y: .00764448289, z: -.00764448103, w: -.707065642}
-  m_LocalPosition: {x: -.239751667, y: -.13899152, z: -9.49902344}
+  m_LocalRotation: {x: 0, y: 0, z: -.189316168, w: .981916189}
+  m_LocalPosition: {x: -.237577572, y: -.117729671, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400004}
@@ -84,9 +84,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100004}
-  m_LocalRotation: {x: 0, y: 0, z: -.189316168, w: .981916189}
-  m_LocalPosition: {x: -.260758698, y: .794158399, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -.208394527, w: .978044868}
+  m_LocalPosition: {x: 6.67567158, y: .0576930903, z: 0}
+  m_LocalScale: {x: .640000045, y: .639999986, z: 1}
   m_Children:
   - {fileID: 400000}
   - {fileID: 400002}
@@ -99,7 +99,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100004}
   m_Mass: 1
-  m_LinearDrag: .951923549
+  m_LinearDrag: .643385351
   m_AngularDrag: .0500000007
   m_GravityScale: .600000024
   m_FixedAngle: 0
@@ -399,7 +399,7 @@ ParticleSystem:
       minMaxState: 3
     gravityModifier: .100000001
     inheritVelocity: 0
-    maxNumParticles: 1000
+    maxNumParticles: 100
   ShapeModule:
     serializedVersion: 2
     enabled: 0
@@ -1195,7 +1195,7 @@ ParticleSystemRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
+  m_SortingLayerID: 404910065
   m_SortingOrder: 0
   m_RenderMode: 0
   m_MaxParticleSize: 5
@@ -1229,7 +1229,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3fd3831a6d65c4a0f86537fa6333c363, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d35be11f4e8f55f42b834e4a70357e93, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
