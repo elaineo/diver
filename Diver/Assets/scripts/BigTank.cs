@@ -3,6 +3,7 @@ using System.Collections;
 
 public class BigTank : MonoBehaviour {
 	float time = 0;
+	float frequency = 5.0f;
 	// Use this for initialization
 	void Start () {
 	}
@@ -12,7 +13,7 @@ public class BigTank : MonoBehaviour {
 		float oxygen = OxygenBar.Oxygen();
 		if (oxygen < 0.3f) {
 			time += Time.deltaTime;
-			oxygen = Mathf.Sin (time * 5.0f) * 0.5f + 0.5f;
+			oxygen = Mathf.Sin (2.0f * Mathf.PI * time * frequency) * 0.5f + 0.5f;
 			byte oxygenColor = 100;
 			int o = (int)((1 - oxygen) * 100);
 			oxygenColor = (byte)o;
