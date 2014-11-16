@@ -14,9 +14,10 @@ public class BGLooper : MonoBehaviour {
 	HashSet<string> hs = new HashSet<string>();
 
 	void Start() {
-		hs.Add ("Sea");
+		hs.Add("Sea");
 		hs.Add("Sand");
 		hs.Add("Shine");
+
 
 //		GameObject[] pipes = GameObject.FindGameObjectsWithTag("Pipe");
 //
@@ -28,7 +29,7 @@ public class BGLooper : MonoBehaviour {
 		// Create some coins
 //		GameObject coin = Instantiate(coin);
 //		coin.transform.position = new Vector3(0, 0, 0);
-//		Debug.Log ("BGLooper start");
+	Debug.Log ("BGLooper start");
 	}
 
 	void OnTriggerEnter2D(Collider2D collider) {
@@ -57,17 +58,27 @@ public class BGLooper : MonoBehaviour {
 		if ("Shine" == collider.tag) {
 			shineCounter++;
 			if (shineCounter%2 == 0) {
-				int r = Random.Range(0, 3);
-				string[] levels = {"LevelA", "Level_B", "Level_C"};
+				int r = Random.Range(1, 3);
+				if (shineCounter < 12) {
+					r = Random.Range(1, 2);
+				}
+				if (shineCounter < 6) {
+					r = Random.Range(0, 1);
+				}
+				string[] levels = {"Level 1", "Level 2", "Level 3", "Level 4"};
 				Debug.Log (r);
+				pos.x = pos.x + 3.0f;
 				switch (r) {
 					case 0: 
-					pos.y = 1.25f;
+					pos.y = 1.0f;
 					break;
 					case 1:
 					pos.y = 1.0f;
 					break;
 					case 2:
+					pos.y = 1.0f;
+					break;
+					case 4:
 					pos.y = 1.0f;
 					break;
 				}
