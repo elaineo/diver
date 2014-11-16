@@ -76,7 +76,7 @@ public class Player : MonoBehaviour {
 				powerUpTimeout -= Time.deltaTime;
 			} else if (poweredUp) {
 				poweredUp = false;
-				transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);							
+				transform.localScale = new Vector3(0.64f, 0.64f, 1.0f);							
 			}
 		}
 	}
