@@ -58,12 +58,12 @@ public class BGLooper : MonoBehaviour {
 		if ("Shine" == collider.tag) {
 			shineCounter++;
 			if (shineCounter%2 == 0) {
-				int r = Random.Range(1, 3);
+				int r = Random.Range(1, 4);
 				if (shineCounter < 12) {
-					r = Random.Range(1, 2);
+					r = Random.Range(1, 3);
 				}
 				if (shineCounter < 6) {
-					r = Random.Range(0, 1);
+					r = Random.Range(0, 2);
 				}
 				string[] levels = {"Level 1", "Level 2", "Level 3", "Level 4"};
 				Debug.Log (r);
